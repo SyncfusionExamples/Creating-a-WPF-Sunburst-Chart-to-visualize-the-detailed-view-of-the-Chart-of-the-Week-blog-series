@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="25.1.42" />
+    <PackageReference Include="Syncfusion.SfSunburstChart.WPF" Version="25.1.42" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="*" />
+  </ItemGroup>
+
+</Project>
