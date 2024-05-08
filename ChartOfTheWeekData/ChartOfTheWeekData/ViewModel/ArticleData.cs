@@ -21,8 +21,8 @@ namespace ChartOfTheWeekData
         public ObservableCollection<ArticleModel> Data { get; set; }
         public List<ArticleModel> Blogs { get; set; }
         public List<ArticleModel> SelectedBlogs { get; set; }
-        public ObservableCollection<Brush> PaletteBrushes { get; set; }
 
+        // Icon for chart types
         string column = "M0,22.299992L32,22.299992 32,26.700001 0,26.700001z M10.800018,11.9L14.900024,11.9 14.900024,19.999996 10.800018,19.999996z M16.900024,8.699995L21,8.699995 21,19.999996 16.900024,19.999996z M4.8000183,7.4999986L8.9000244,7.4999986 8.9000244,19.999996 4.8000183,19.999996z M22.700012,0L26.800018,0 26.800018,19.999996 22.700012,19.999996z";
         string line = "M0,0L2,0 2,28.586113 12.946,17.641008 17.018999,21.566998 27.586025,11 21,11 21,9 31,9 31,18 29,18 29,12.414021 17.044001,24.369989 12.971,20.443001 3.4139738,30 32,30 32,32 0,32z";
         string area = "M20,6L28,28 4,28 4,18 11.283997,24z M2,2L2,30 30,30 30,2z M0,0L32,0 32,32 0,32z";
@@ -48,6 +48,7 @@ namespace ChartOfTheWeekData
 
         public ArticleData()
         {
+            // Platform, icon, title and URL of published blogs for list view
             Blogs = new List<ArticleModel>()
             {
                 new ArticleModel(".NET MAUI",column,"Business Analysis","Creating a .NET MAUI Column Chart to Visualize Yearly Box Office Data", "https://www.syncfusion.com/blogs/post/dotnet-maui-column-chart-visualize-yearly-box-office-data.aspx"),
@@ -102,6 +103,7 @@ namespace ChartOfTheWeekData
                 new ArticleModel(".NET MAUI",line,"Miscellaneous","Creating a .NET MAUI Line Chart to Analyze Wage Trends in the Texas Oil Gas Extraction Industry", "https://www.syncfusion.com/blogs/post/dotnet-maui-line-chart-oil-gas-extraction"),
             };
 
+            // Platform, blog count and its category of published blogs for sunburst chart
             Data = new ObservableCollection<ArticleModel>
             {
                 new ArticleModel(".NET MAUI",13, "Business Analysis"),
@@ -117,14 +119,6 @@ namespace ChartOfTheWeekData
 
                 new ArticleModel("WINUI",2, "Business Analysis"),
                 new ArticleModel("WINUI",1, "Environmental & Climate"),
-            };
-
-            PaletteBrushes = new ObservableCollection<Brush>()
-            {
-                new SolidColorBrush(Color.FromArgb(255, 45, 109, 144)),
-                new SolidColorBrush(Color.FromArgb(255, 81, 161, 39)),
-                new SolidColorBrush(Color.FromArgb(255, 210, 186, 34)),
-                new SolidColorBrush(Color.FromArgb(255, 221, 117, 110)),
             };
 
             SelectedBlogs = Blogs.ToList();

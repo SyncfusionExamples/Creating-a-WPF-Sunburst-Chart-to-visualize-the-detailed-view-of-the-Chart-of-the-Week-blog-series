@@ -32,6 +32,11 @@
             <chart:SfSunburstChart Grid.Column="0" ItemsSource="{Binding Data}" ValueMemberPath="Count" Radius="0.8"   
                                    Palette="Custom" SelectionChanged="SfSunburstChart_SelectionChanged">
 
+                <chart:SfSunburstChart.Levels>
+                    <chart:SunburstHierarchicalLevel GroupMemberPath="Platform"/>
+                    <chart:SunburstHierarchicalLevel GroupMemberPath="Category"/>
+                </chart:SfSunburstChart.Levels>
+
                 <chart:SfSunburstChart.Header>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -43,11 +48,6 @@
                                FontWeight="SemiBold" Foreground="#575A5E"/>
                     </Grid>
                 </chart:SfSunburstChart.Header>
-
-                <chart:SfSunburstChart.Levels>
-                    <chart:SunburstHierarchicalLevel GroupMemberPath="Platform"/>
-                    <chart:SunburstHierarchicalLevel GroupMemberPath="Category"/>
-                </chart:SfSunburstChart.Levels>
 
                 <chart:SfSunburstChart.ColorModel>
                     <chart:SunburstColorModel>
@@ -162,7 +162,9 @@
                             </GridViewColumn>
                         </GridView>
                     </ListView.View>
+                    
                 </ListView>
+                
             </Border>
 
         </Grid>

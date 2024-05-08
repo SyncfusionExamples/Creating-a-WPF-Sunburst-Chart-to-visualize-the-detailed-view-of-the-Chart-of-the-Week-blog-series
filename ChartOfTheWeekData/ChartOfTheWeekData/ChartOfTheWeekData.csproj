@@ -9,9 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syncfusion.SfChart.WPF" Version="25.1.42" />
-    <PackageReference Include="Syncfusion.SfSunburstChart.WPF" Version="25.1.42" />
-    <PackageReference Include="Syncfusion.Shared.WPF" Version="*" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="*" />
+    <PackageReference Include="Syncfusion.SfSunburstChart.WPF" Version="*" />
   </ItemGroup>
 
 </Project>
