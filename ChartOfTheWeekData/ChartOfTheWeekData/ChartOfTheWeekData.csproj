@@ -9,11 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\chartoftheweek_data.csv" />
-    <None Remove="Resources\data.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="*" />
     <PackageReference Include="Syncfusion.SfChart.WPF" Version="*" />
     <PackageReference Include="Syncfusion.SfSunburstChart.WPF" Version="*" />
