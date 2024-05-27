@@ -17,5 +17,5 @@ This article demonstrates how to create a WPF Sunburst Chart dashboard to visual
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name and build the project.
 
 
-For a step-by-step procedure, refer to the [WPF Sunburst Chart for Chart of the Week Dashboard blog]().
+For a step-by-step procedure, refer to the [WPF Sunburst Chart for Chart of the Week Dashboard blog](https://www.syncfusion.com/blogs/post/wpf-sunburst-chart-syncfusion-blogs).
 
